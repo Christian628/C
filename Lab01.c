@@ -8,7 +8,7 @@ main(void)
 	int length = 1;
 	int to_right = 1;
 	while (1) {
-		for (int i = 1; i <= length; i++)
+		for (int i = 1; i < length; i++)
 		{
 			printf(" ");
 		}
@@ -19,7 +19,9 @@ main(void)
 		}
 		printf("\r");
 		Sleep(50);
+		
 		//fflush(stdout);
+		
 		if (to_right) {
 			length++;
 			if (length == 30) to_right = 0;
